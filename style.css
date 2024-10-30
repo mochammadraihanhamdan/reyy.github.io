@@ -1,58 +1,86 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>PORTOFOLIO SAYA</title>
-</head>
-<body>
-    <header>
-        <h1>MOCHAMMAD RAIHAN HAMDAN AL FARUQ</h1>
-        <nav>
-            <ul>
-                <li><a href="#contact>Tentang</a></li>
-                <li><a href="#projects>Proyek</a></li>
-                <li><a href="#contact>Kontak</a></li>
-            </ul>
-        </nav>
-    </header>
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <section id="about">
-        <h2>Tentang Saya</h2>
-        <p>saya adalah manusia sosok tunggu kiris.</p>
-    </section>
+/* Gaya umum */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-    <section id="projects">
-        <h2>Proyek Saya</h2>
-        <div class="project">
-            <h3>Nama Proyek 1</h3>
-            <p>Deskripsi proyek 1.</p>
-            <a>Lihat Proyek</a>
-        </div>
-        <div class="project">
-            <h3>Nama Proyek 2</h3>
-            <p>Deskripsi proyek 2.</p>
-            <a>Lihat Proyek</a>
-        </div>
-        <!-- Tambahkan lebih banyak proyek sesuai kebutuhan -->
-    </section>
+/* Navbar */
+.navbar {
+    background-color: #333;
+}
 
-    <section id="contact">
-        <h2>Hubungi saya dengan mengisi kolom ini</h2>
-        <form>
-            <label for="name">Nama:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Pesan:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Kirim</button>
-        </form>
-    </section>
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
 
-    <footer>
-        <p>&copy; 2024 Reyy. Semua hak dilindungi.</p>
-    </footer>
-</body>
-</html>
+.nav-link:hover {
+    background-color: #575757;
+}
+
+/* Sidebar */
+.sidebar {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.sidebar img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Daftar menu sidebar */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+.sidebar ul li a:hover {
+    color: #007bff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .sidebar h2 {
+        font-size: 20px;
+    }
+
+    .sidebar ul li {
+        margin: 10px 0;
+    }
+}
